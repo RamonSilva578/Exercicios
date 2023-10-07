@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+const consumo_kwh = parseFloat(prompt("Digite o consumo em kWh: "));
+
+
+ let preco_por_kwh;
+
+
+ if (consumo_kwh <= 300) {
+     preco_por_kwh = 1.25;
+ } else if (consumo_kwh <= 600) {
+     preco_por_kwh = 1.50;
+ } else if (consumo_kwh <= 1000) {
+     preco_por_kwh = 1.75;
+ } else {
+     preco_por_kwh = 2.00;
+ }
+
+const valor_conta = consumo_kwh * preco_por_kwh;
+
+alert(`A conta de energia elétrica é de R$${valor_conta.toFixed(2)}`);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

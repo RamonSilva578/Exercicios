@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+let nomeMaiorVinho = "";
+let precoMaiorVinho = 0;
+let tipoMaiorVinho = "";
+
+let fim = false;
+
+while (!fim) {
+  let nomeNovoVinho = prompt("Digite o nome do vinho (fim para sair)");
+  if (nomeNovoVinho === "fim") {
+    break;
+  }
+  let precoNovoVinho = +prompt("Digite o preço do vinho");
+  let tipoNovoVinho = prompt("Digite o tipo do vinho");
+
+  if (precoNovoVinho > precoMaiorVinho) {
+    nomeMaiorVinho = nomeNovoVinho;
+    precoMaiorVinho = precoNovoVinho;
+    tipoMaiorVinho = tipoNovoVinho; // Corrigido aqui
+  }
+}
+
+alert("O Vinho " + nomeMaiorVinho + " é o mais caro, seu preço é " + precoMaiorVinho + " e seu tipo é " + tipoMaiorVinho);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+let custoDeFabrica = parseFloat(prompt("Digite o custo de fábrica do carro:"));
+
+let percentualDistribuidor = 0.28; // 28%
+let percentualImpostos = 0.45; // 45%
+
+
+let custoAoConsumidor = custoDeFabrica + (custoDeFabrica * percentualDistribuidor) + (custoDeFabrica * percentualImpostos);
+
+alert("O custo final ao consumidor é: R$" + custoAoConsumidor.toFixed(2));
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

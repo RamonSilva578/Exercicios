@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+function calcularMedia() {
+    let nota1, nota2;
+
+    while (true) {
+        nota1 = parseFloat(prompt("Digite a nota da 1ª avaliação (0 a 10):"));
+        if (!isNaN(nota1) && nota1 >= 0 && nota1 <= 10) {
+            break;
+        }
+    }
+
+    
+    while (true) {
+        nota2 = parseFloat(prompt("Digite a nota da 2ª avaliação (0 a 10):"));
+        if (!isNaN(nota2) && nota2 >= 0 && nota2 <= 10) {
+            break;
+        }
+    }
+
+    const media = (nota1 + nota2) / 2;
+
+    
+    console.log(`A média do aluno é: ${media.toFixed(2)}`);
+}
+
+
+let continuar = "SIM";
+
+
+while (continuar === "SIM") {
+    calcularMedia();
+    continuar = prompt("Deseja continuar calculando a média para outros alunos? (SIM ou NÃO)").toUpperCase();
+}
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+let nomes = [];
+
+while (true) {
+  let nome = prompt("Digite um nome de pessoa (ou deixe em branco para encerrar):");
+  
+ 
+  if (nome === "") {
+    break;
+  }
+  
+  nomes.push(nome);
+}
+
+let nomeProcurado = prompt("Digite um nome para procurar:");
+
+let encontrou = false;
+for (let i = 0; i < nomes.length; i++) {
+  if (nomes[i] === nomeProcurado) {
+    encontrou = true;
+    break;
+  }
+}
+
+if (encontrou) {
+  alert("ACHEI");
+} else {
+  alert("NÃO ACHEI");
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

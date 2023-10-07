@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+const numeros =[] 
+
+for (let i = 0; i<5; i++){ 
+    numeros[i] = parseInt(prompt("digite o numero desejado"))
+
+}
+
+console.log(numeros) 
+
+
+
+let maiornumero = numeros[0]
+let menornumero = numeros[0]
+let soma = 0
+
+
+for (let i = 0; i<5; i++){
+soma = numeros[i] + soma
+
+
+if (numeros[i] > maiornumero){ 
+    maiornumero = numeros[i]
+}
+
+
+if (numeros[i] < menornumero){ 
+    menornumero = numeros[i]
+}
+}
+
+console.log("o maior numero e " + maiornumero)
+console.log("o menor numero e " + menornumero)
+console.log("soma dos numeros e " + soma)
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

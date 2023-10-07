@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let quantidadeAlunos = parseInt(prompt("Digite a quantidade de alunos:"));
+
+
+let notas = [];
+
+
+let aprovados = 0;
+let reprovados = 0;
+
+
+for (let i = 0; i < quantidadeAlunos; i++) {
+    let aluno = i + 1;
+    let somaNotas = 0;
+
+
+    for (let j = 0; j < 4; j++) {
+        let nota = parseFloat(prompt("Digite a nota " + (j + 1) + " do aluno " + aluno + ":"));
+        somaNotas += nota;
+    }
+
+
+    let media = somaNotas / 4;
+    notas.push([aluno, media]);
+
+
+    if (media >= 6) {
+        aprovados++;
+        console.log("O Aluno " + aluno + " foi Aprovado com média " + media.toFixed(2));
+    } else {
+        reprovados++;
+        console.log("O Aluno " + aluno + " foi Reprovado com média " + media.toFixed(2));
+    }
+}
+
+
+let porcentagemAprovados = (aprovados / quantidadeAlunos) * 100;
+
+
+console.log("Quantidade de alunos aprovados: " + aprovados);
+alert("Quantidade de alunos aprovados: " + aprovados);
+console.log("Quantidade de alunos reprovados: " + reprovados);
+alert("Quantidade de alunos reprovados: " + reprovados);
+console.log("Porcentagem de alunos aprovados: " + porcentagemAprovados.toFixed(2) + "%");
+alert("Porcentagem de alunos aprovados: " + porcentagemAprovados.toFixed(2) + "%");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

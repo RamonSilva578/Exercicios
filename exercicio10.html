@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+function calcularValorPromocao(precoAnterior, precoAtual) {
+  const desconto10Porcento = precoAtual * 0.10;
+  const precoAtualComDesconto = precoAtual - desconto10Porcento;
+  const mediaComDesconto = (precoAnterior + precoAtualComDesconto) / 2;
+
+  return Math.min(precoAnterior, precoAtualComDesconto, mediaComDesconto);
+}
+
+const precoAnterior = parseFloat(prompt("Digite o preço anterior do produto:"));
+const precoAtual = parseFloat(prompt("Digite o preço atual do produto:"));
+
+if (!isNaN(precoAnterior) && !isNaN(precoAtual)) {
+  const valorPromocao = calcularValorPromocao(precoAnterior, precoAtual);
+  alert(`Durante a promoção, o valor é: R$ ${valorPromocao.toFixed(2)}`);
+} else {
+  alert("Valores inválidos. Certifique-se de inserir números válidos.");
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

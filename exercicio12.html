@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let numeroVendedores = parseInt(prompt("Digite o número de vendedores:"));
+
+
+let salariosFinais = [];
+
+
+for (let i = 0; i < numeroVendedores; i++) {
+  
+  let numeroCarrosVendidos = parseFloat(prompt("Digite o número de carros vendidos para o vendedor " + (i + 1) + ":"));
+  let valorTotalVendas = parseFloat(prompt("Digite o valor total das vendas para o vendedor " + (i + 1) + ":"));
+  let salarioFixo = parseFloat(prompt("Digite o salário fixo para o vendedor " + (i + 1) + ":"));
+  let comissaoPorCarro = parseFloat(prompt("Digite o valor da comissão por carro vendido para o vendedor " + (i + 1) + ":"));
+
+ 
+  let comissao = numeroCarrosVendidos * comissaoPorCarro;
+
+  
+  let salarioFinal = salarioFixo + comissao + (0.05 * valorTotalVendas);
+
+  
+  salariosFinais.push(salarioFinal);
+}
+
+
+for (let i = 0; i < numeroVendedores; i++) {
+  alert("O salário final do vendedor " + (i + 1) + " é: R$ " + salariosFinais[i].toFixed(2));
+}
+console.table(salariosFinais);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

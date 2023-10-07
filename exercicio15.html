@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let indicepoluicao = +prompt("digite o indice de poluicao:"); 
+
+if (indicepoluicao >= 0.5) { 
+    alert("Indice de poluicao acima do permitido todos os grupos de industria devem suspender suas atividades");
+}
+
+else if (indicepoluicao >= 0.4) { 
+    alert("alerta o primeiro e o segundo grupo de industria devem suspender suas atividades");
+}
+
+else if (indicepoluicao >= 0.3) { 
+    alert("alerta o primeiro grupo de industria devem suspender suas atividades");
+}
+
+else if (indicepoluicao >= 0.05  && indicepoluicao <= 0.25) { 
+    alert("o indice de poluicao esta dentro dos limites aceitaveis todos os grupos de industria podem continuar suas atividades");
+
+}
+
+else {
+    alert("o indice de poluicao inserido nao e valido"); 
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

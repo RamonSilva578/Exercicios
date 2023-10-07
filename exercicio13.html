@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let quantidadeAtual = parseInt(prompt("Informe a quantidade atual em estoque:"));
+
+
+let quantidadeMaxima = parseInt(prompt("Informe a quantidade máxima em estoque:"));
+
+
+let quantidadeMinima = parseInt(prompt("Informe a quantidade mínima em estoque:"));
+
+
+let quantidadeMedia = (quantidadeMaxima + quantidadeMinima) / 2;
+
+
+if (quantidadeAtual >= quantidadeMedia) {
+    alert("Não efetuar compra");
+} else {
+    alert("Efetuar compra");
+}
+console.table(quantidadeMedia);
+alert("A quantidade máxima em estoque é: " + quantidadeMaxima);
+alert("A quantidade mínima em estoque é: " + quantidadeMinima);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
